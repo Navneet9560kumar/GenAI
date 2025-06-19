@@ -16,3 +16,4 @@ response = client.embeddings.create(
 )
 
 print(response)
+ 
