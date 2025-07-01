@@ -1,0 +1,7 @@
+{
+      "name":"Learing GenAI Cohort",
+      "dockerComposeFile":"../docker-compose.yml",
+      "service":"app",
+      "workspaceFolder":"/workspace${localWorkspaceFolderBasename}",
+      "remoteUser": "root",
+}

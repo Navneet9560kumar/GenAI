@@ -16,3 +16,4 @@ def send_chat(query: str = Query(..., description="Chat message")):
         "status": "Your message has been queued successfully.",
         "job_id": job.id
     }
+ 
