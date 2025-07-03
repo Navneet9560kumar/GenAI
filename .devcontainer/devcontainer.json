@@ -1,7 +1,7 @@
 {
-      "name":"Learing GenAI Cohort",
-      "dockerComposeFile":"../docker-compose.yml",
-      "service":"app",
-      "workspaceFolder":"/workspace${localWorkspaceFolderBasename}",
-      "remoteUser": "root",
+  "name": "Learning GenAI Cohort",
+  "dockerComposeFile": "06-langgraph/Chat_graph/docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "root"
 }
