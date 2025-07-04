@@ -133,11 +133,28 @@ def main():
         "is_Coding_question": None,
         "llm_result": None
     }
-    result = graph.invoke(state)
-    print("\n🤖 Response:", result["llm_result"])
-    if result.get("accuracy_percentage"):
-        print("✅ Code Accuracy:", result["accuracy_percentage"])
-    main()
 
+def main():
+    user = input("You: ")
+    state = {
+        "user_query": user,
+        "accuracy_percentage": None,
+        "is_Coding_question": None,
+        "llm_result": None
+    }
+
+    for event in graph.stream(state):
+        print("Event:", event)
+
+# Run main function
 if __name__ == "__main__":
     main()
+
+#     result = graph.invoke(state)
+#     print("\n🤖 Response:", result["llm_result"])
+#     if result.get("accuracy_percentage"):
+#         print("✅ Code Accuracy:", result["accuracy_percentage"])
+#     main()
+
+# if __name__ == "__main__":
+#     main()
