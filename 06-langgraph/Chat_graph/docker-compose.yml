@@ -36,3 +36,13 @@ services:
 
 volumes:
   mongodb_data:
+
+
+# neo4j:
+#   image:neo4j:latest
+#   ports:
+#     -7474:7474
+#     -7687:7684
+#     volumes:
+#     mongodb_data:
+#     neo4j_data
