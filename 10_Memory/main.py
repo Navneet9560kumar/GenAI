@@ -22,7 +22,7 @@ config = {
     "llm": {
         "provider": "openai",
         "config": {
-            "api_key": OPEN_API_KEY,
+            "abpi_key": OPEN_API_KEY,
             "model": "gpt-4.1"
         }
     },
